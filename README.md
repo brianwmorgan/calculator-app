@@ -19,4 +19,4 @@ It can handle parentheses and exponents. The layout was built using this [tutori
 3. Run `npm start` to start the application locally.
 
 ## App Screenshot
-![App screenshot](images/caesar-screenshot.png) 
+![App screenshot](images/calculator-app-screenshot.png) 
