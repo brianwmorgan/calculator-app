@@ -1,6 +1,7 @@
 # Calculator App
 
-This calculator app allows a user to enter a mathematical expression and receive an answer. It can handle parentheses and exponents. The layout was built using this [tutorial](https://www.sitepoint.com/react-tutorial-build-calculator-app/).
+This calculator app allows a user to enter a mathematical expression and receive an answer.  
+It can handle parentheses and exponents. The layout was built using this [tutorial](https://www.sitepoint.com/react-tutorial-build-calculator-app/).
 
 ## Links
 [Live App](https://calculator-app-sigma-five.vercel.app/) deployed to Vercel  
