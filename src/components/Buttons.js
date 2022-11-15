@@ -6,7 +6,7 @@ const Buttons = ({ clickHandler, clearHandler, calculateHandler }) => {
       <button className="button" onClick={clickHandler}> ( </button>
       <button className="button" onClick={clickHandler}> ) </button>
       <button className="button" onClick={clickHandler}> ^ </button>
-      <button className="button" onClick={clearHandler}> CE </button>
+      <button className="button" onClick={clearHandler}> C </button>
 
       <button className="button" onClick={clickHandler}> 1 </button>
       <button className="button" onClick={clickHandler}> 2 </button>
