@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import Wrapper from "./components/Wrapper";
+import Display from "./components/Display";
+import ButtonBox from "./components/ButtonBox";
+import Buttons from "./components/Buttons";
+
+const App = () => {
+  const [displayValue, setDisplayValue] = useState("");
+
+  const clickHandler = (event) => {
+    event.preventDefault();
+    const value = event.target.innerHTML;
+    setDisplayValue(displayValue + value);
+  };
+
+  const clearHandler = (event) => {
+    event.preventDefault();
+    setDisplayValue("");
+  };
+
+  const calculateHandler = (event) => {
+    event.preventDefault();
+    let result = "";
+    let statement = displayValue.replaceAll("^", "**").replaceAll(" ", "");
+    try {
+      result = eval(statement);
+      setDisplayValue(result);
+    } catch (error) {
+      result = "error";
+      setDisplayValue(result);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Display value={displayValue ? displayValue : 0} />
+      <ButtonBox>
+        <Buttons
+          clickHandler={clickHandler}
+          clearHandler={clearHandler}
+          calculateHandler={calculateHandler}
+        />
+      </ButtonBox>
+    </Wrapper>
   );
-}
+};
 
 export default App;
