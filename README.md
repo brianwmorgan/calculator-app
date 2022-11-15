@@ -13,10 +13,10 @@ It can handle parentheses and exponents. The layout was built using this [tutori
 ![HTML icon](images/html.png)
 ![CSS icon](images/css.png)  
   
+## App Screenshot
+![App screenshot](images/calculator-app-screenshot.png) 
+
 ## Installation
 1. Fork and clone this repository.
 2. Run `npm install` to install project dependencies.
 3. Run `npm start` to start the application locally.
-
-## App Screenshot
-![App screenshot](images/calculator-app-screenshot.png) 
